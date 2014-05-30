@@ -19,7 +19,6 @@ group :doc do
   gem 'sdoc', '~> 0.4.0'
 end
 
-
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
