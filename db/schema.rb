@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20140530225119) do
   enable_extension "plpgsql"
   enable_extension "uuid-ossp"
 
-  create_table "repositories", force: true do |t|
+  create_table "repositories", id: :uuid, default: "uuid_generate_v4()", force: true do |t|
     t.string   "name",       null: false
     t.string   "source"
     t.datetime "created_at"

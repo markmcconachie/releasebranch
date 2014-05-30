@@ -1,6 +1,6 @@
 class CreateRepositories < ActiveRecord::Migration
   def change
-    create_table :repositories do |t|
+    create_table :repositories, id: :uuid do |t|
       t.string :name, null: false
       t.string :source
 
